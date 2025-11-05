@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Promptemon: Unbound</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #333;
+        }
+        h1 {
+            color: #00d4ff;
+            border-bottom: 2px solid #00d4ff;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #00d4ff;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #0099cc;
+            margin-top: 20px;
+        }
+        .update-date {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        .important {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Privacy Policy for Promptemon: Unbound</h1>
+    <p class="update-date">Last Updated: January 4, 2025</p>
+
+    <h2>Introduction</h2>
+    <p>This privacy policy applies to the Promptemon: Unbound mobile application (hereby referred to as "Application" or "App") for mobile devices that was created by Pender Gaming (hereby referred to as "Service Provider" or "we", "us", "our") as a free service. This service is intended for use "AS IS".</p>
+
+    <p>Promptemon: Unbound is a location-based augmented reality game that uses AI to generate unique creatures based on your real-world location. This policy explains what information we collect, how we use it, and your choices regarding your information.</p>
+
+    <h2>Information Collection and Use</h2>
+    <p>Due to the nature of Promptemon: Unbound as a location-based, multiplayer, AI-powered game, we collect certain information to provide and improve our services.</p>
+
+    <h3>Personal Information We Collect</h3>
+    <ul>
+        <li><strong>Authentication Data:</strong> When you create an account using Firebase Authentication, we collect your email address (if provided) or anonymous authentication ID to identify your account and maintain your game progress.</li>
+        <li><strong>User Profile Information:</strong> Display name, player level, currency balances (Chroma Prisms, Genesis Matrices), and gameplay statistics.</li>
+        <li><strong>Location Data:</strong> Your device's GPS coordinates are used to:
+            <ul>
+                <li>Generate location-specific creatures around you</li>
+                <li>Display nearby spawn points and Loci on the map</li>
+                <li>Enable territory control features</li>
+                <li>Provide location-based gameplay experiences</li>
+            </ul>
+        </li>
+        <li><strong>Game Data:</strong> Your creature collection, fusion history, inventory items, achievements, and gameplay actions.</li>
+        <li><strong>Social Data:</strong> Friend connections, trading history, leaderboard rankings, and in-game communications with other players.</li>
+        <li><strong>Device Information:</strong> Device model, operating system version, and unique device identifiers for app functionality and analytics.</li>
+    </ul>
+
+    <div class="important">
+        <strong>Location Privacy:</strong> Your precise GPS coordinates are only used for gameplay purposes and are not shared with other players. Other players can only see your general presence in Loci (public locations) but not your exact position.
+    </div>
+
+    <h3>How We Use Your Information</h3>
+    <p>We use the collected information for the following purposes:</p>
+    <ul>
+        <li><strong>Gameplay:</strong> Generate unique AI creatures based on your location, time of day, and environmental context</li>
+        <li><strong>Multiplayer Features:</strong> Enable friend connections, creature trading, and competitive leaderboards</li>
+        <li><strong>Account Management:</strong> Maintain your profile, save game progress, and sync data across devices</li>
+        <li><strong>Game Balance:</strong> Analyze gameplay data to improve creature generation, balance rarities, and enhance the gaming experience</li>
+        <li><strong>Communication:</strong> Send notifications about nearby creatures, friend requests, and game events</li>
+        <li><strong>Support:</strong> Respond to your inquiries and resolve technical issues</li>
+    </ul>
+
+    <h2>Data Storage and Security</h2>
+
+    <h3>Firebase Cloud Services</h3>
+    <p>Promptemon: Unbound uses Google Firebase as our backend infrastructure:</p>
+    <ul>
+        <li><strong>Firebase Authentication:</strong> Securely manages user accounts and authentication</li>
+        <li><strong>Cloud Firestore:</strong> Stores your game data, creature collections, and social interactions in a secure, encrypted database</li>
+        <li><strong>Firebase Storage:</strong> Stores AI-generated creature images securely</li>
+    </ul>
+    <p>All data is encrypted in transit using HTTPS and at rest using Google's security infrastructure. Firebase complies with major privacy regulations including GDPR and CCPA.</p>
+    <p>For more information about Firebase's security practices, visit: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+
+    <h3>Local Data Storage</h3>
+    <p>The Application also stores certain data locally on your device using SharedPreferences:</p>
+    <ul>
+        <li>User preferences and settings</li>
+        <li>Cached game data for offline viewing</li>
+        <li>Last known location (for quick app startup)</li>
+    </ul>
+
+    <h2>Artificial Intelligence (AI) Usage</h2>
+    <p>Promptemon: Unbound uses Google's Gemini AI to generate unique creatures. Here's how it works:</p>
+    <ul>
+        <li><strong>What We Send:</strong> We send your current location context (location type, time of day, biome) and desired creature rarity to Google's Gemini API</li>
+        <li><strong>What We Receive:</strong> AI-generated creature names, descriptions, types, stats, and moves</li>
+        <li><strong>Privacy:</strong> No personally identifiable information is sent to the AI service. Location context is generalized (e.g., "urban park at night" rather than precise coordinates)</li>
+        <li><strong>Data Retention:</strong> Google's AI service does not store or use your prompts to train their models (based on our API tier)</li>
+    </ul>
+    <p>For more information about Google's AI data practices, visit: <a href="https://ai.google.dev/gemini-api/terms" target="_blank">https://ai.google.dev/gemini-api/terms</a></p>
+
+    <h2>Image Generation Services</h2>
+    <p>Creature images are generated using third-party AI image generation services:</p>
+    <ul>
+        <li><strong>Pollinations.ai (Free Tier):</strong> Default provider for generating creature images. Images are generated via public API and may be cached by the service.</li>
+        <li><strong>Optional Premium Providers:</strong> Players can optionally configure DALL-E or Stability AI with their own API keys for higher quality images.</li>
+    </ul>
+    <p>Image prompts sent to these services contain creature descriptions but no personal information.</p>
+
+    <h2>Third-Party Services</h2>
+
+    <h3>Google Mobile Ads (AdMob)</h3>
+    <p>We use Google AdMob to display advertisements within the Application. AdMob may collect certain information to serve personalized ads, including:</p>
+    <ul>
+        <li>Device information (device model, operating system version)</li>
+        <li>Advertising ID</li>
+        <li>IP address</li>
+        <li>App interaction data</li>
+    </ul>
+    <p>For more information about how Google uses data, please review Google's Privacy Policy at: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+    <p>You can opt-out of personalized advertising by adjusting your device's ad settings:</p>
+    <ul>
+        <li><strong>Android:</strong> Settings > Google > Ads > Opt out of Ads Personalization</li>
+    </ul>
+
+    <h3>Google Maps Platform</h3>
+    <p>The Application uses Google Maps to display the game map and your location. Google Maps may collect:</p>
+    <ul>
+        <li>Location data</li>
+        <li>Device information</li>
+        <li>Map interactions (zoom, pan, searches)</li>
+    </ul>
+    <p>Google Maps data usage is governed by Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+
+    <h2>Location Permissions</h2>
+    <div class="important">
+        <strong>Location Access:</strong> Promptemon: Unbound requires access to your device's location to function. The app will request location permissions when you first launch it.
+    </div>
+    <ul>
+        <li><strong>Why We Need It:</strong> Location data is essential for generating creatures around you, displaying the game map, and enabling territory-based features</li>
+        <li><strong>When We Access It:</strong> Location is accessed continuously while the app is in use</li>
+        <li><strong>How to Control It:</strong> You can revoke location permissions in your device settings, but this will prevent the game from functioning properly</li>
+    </ul>
+
+    <h2>Multiplayer and Social Features</h2>
+    <p>When you interact with other players through multiplayer features:</p>
+    <ul>
+        <li><strong>Friend System:</strong> Friend requests and connections are stored to enable social gameplay</li>
+        <li><strong>Trading:</strong> Trade history (creatures exchanged, participants, timestamps) is recorded</li>
+        <li><strong>Leaderboards:</strong> Your display name, level, and statistics may be visible to other players in leaderboards</li>
+        <li><strong>Public Loci:</strong> Your presence in public Loci may be visible to nearby players (without revealing your exact location)</li>
+    </ul>
+    <p>You can control your social visibility through in-game settings.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>Promptemon: Unbound is not directed at children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us at pendergamification@gmail.com so that we can take necessary action.</p>
+    <p>Parents should be aware that the game:</p>
+    <ul>
+        <li>Uses location tracking</li>
+        <li>Displays advertisements</li>
+        <li>Includes social features that may allow interaction with other players</li>
+        <li>May include in-app purchases</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <p>We retain your data for the following periods:</p>
+    <ul>
+        <li><strong>Account Data:</strong> Retained as long as your account is active. If you delete your account, data is removed within 30 days.</li>
+        <li><strong>Location Data:</strong> Current location is stored temporarily and updated as you move. Historical location data is not retained beyond 24 hours.</li>
+        <li><strong>Creature Data:</strong> Your captured creatures are retained as long as your account exists.</li>
+        <li><strong>Social Data:</strong> Trading history and friend connections are retained for account integrity and dispute resolution.</li>
+        <li><strong>Spawn Points:</strong> AI-generated spawn points expire automatically after 1-2 hours and are removed from the database.</li>
+    </ul>
+
+    <h2>Your Rights</h2>
+    <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+    <ul>
+        <li><strong>Access:</strong> Request a copy of the personal data we hold about you</li>
+        <li><strong>Correction:</strong> Request correction of inaccurate or incomplete data</li>
+        <li><strong>Deletion:</strong> Request deletion of your account and associated data</li>
+        <li><strong>Data Portability:</strong> Request a machine-readable copy of your data</li>
+        <li><strong>Withdrawal of Consent:</strong> Revoke consent for data processing (note: this may prevent you from using the app)</li>
+        <li><strong>Object to Processing:</strong> Object to certain types of data processing</li>
+    </ul>
+    <p>To exercise these rights, contact us at pendergamification@gmail.com</p>
+
+    <h3>How to Delete Your Account</h3>
+    <p>To delete your account and all associated data:</p>
+    <ol>
+        <li>Open Promptemon: Unbound</li>
+        <li>Go to Profile > Settings</li>
+        <li>Select "Delete Account"</li>
+        <li>Confirm deletion</li>
+    </ol>
+    <p>Alternatively, email us at pendergamification@gmail.com with your account details, and we will process your deletion request within 30 days.</p>
+
+    <h2>International Data Transfers</h2>
+    <p>Your data may be transferred to and processed in countries other than your own. Google Firebase has data centers worldwide and complies with international data transfer regulations including:</p>
+    <ul>
+        <li>EU Standard Contractual Clauses (SCCs)</li>
+        <li>GDPR requirements for international transfers</li>
+        <li>Privacy Shield frameworks (where applicable)</li>
+    </ul>
+
+    <h2>Security Measures</h2>
+    <p>We implement industry-standard security measures to protect your data:</p>
+    <ul>
+        <li>All data transmissions are encrypted using HTTPS/TLS</li>
+        <li>Firebase Authentication uses secure token-based authentication</li>
+        <li>Firestore security rules restrict unauthorized data access</li>
+        <li>User passwords are hashed and never stored in plain text</li>
+        <li>Regular security audits and updates</li>
+    </ul>
+    <p>However, no method of transmission over the internet or electronic storage is 100% secure. While we strive to protect your personal information, we cannot guarantee absolute security.</p>
+
+    <h2>Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. We will notify you of any material changes by:</p>
+    <ul>
+        <li>Posting the new Privacy Policy in the app</li>
+        <li>Updating the "Last Updated" date</li>
+        <li>Sending an in-app notification for significant changes</li>
+    </ul>
+    <p>You are advised to review this Privacy Policy periodically. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>California Privacy Rights (CCPA)</h2>
+    <p>If you are a California resident, you have specific rights under the California Consumer Privacy Act (CCPA):</p>
+    <ul>
+        <li>Right to know what personal information is collected, used, shared, or sold</li>
+        <li>Right to delete personal information</li>
+        <li>Right to opt-out of the sale of personal information (Note: We do not sell personal information)</li>
+        <li>Right to non-discrimination for exercising CCPA rights</li>
+    </ul>
+    <p>To exercise these rights, contact pendergamification@gmail.com</p>
+
+    <h2>European Union (GDPR) Rights</h2>
+    <p>If you are located in the European Union or European Economic Area, you have rights under the General Data Protection Regulation (GDPR):</p>
+    <ul>
+        <li>Right to access your personal data</li>
+        <li>Right to rectification of inaccurate data</li>
+        <li>Right to erasure ("right to be forgotten")</li>
+        <li>Right to restrict processing</li>
+        <li>Right to data portability</li>
+        <li>Right to object to processing</li>
+        <li>Right to withdraw consent</li>
+        <li>Right to lodge a complaint with a supervisory authority</li>
+    </ul>
+    <p>Our legal basis for processing your data includes:</p>
+    <ul>
+        <li><strong>Consent:</strong> You consent to location tracking and AI-generated content when you use the app</li>
+        <li><strong>Contract:</strong> Processing is necessary to provide the game service you requested</li>
+        <li><strong>Legitimate Interests:</strong> We process data to improve gameplay, prevent fraud, and maintain service quality</li>
+    </ul>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p><strong>Pender Gaming</strong></p>
+        <p>Email: <a href="mailto:pendergamification@gmail.com">pendergamification@gmail.com</a></p>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us. We will respond to your inquiry within 30 days.</p>
+        <p>This privacy policy page was created to ensure transparency about data practices in Promptemon: Unbound and to comply with applicable privacy laws and regulations including GDPR, CCPA, and other international privacy frameworks.</p>
+    </div>
+
+    <h2>Consent</h2>
+    <p>By using Promptemon: Unbound, you hereby consent to our Privacy Policy and agree to its terms. When you first launch the app, you will be asked to accept this privacy policy and grant necessary permissions (location access, storage access) for the app to function.</p>
+
+    <p>If you do not agree with this policy, please do not use the Application. You can withdraw your consent at any time by deleting your account and uninstalling the app.</p>
+</body>
+</html>
