@@ -68,7 +68,7 @@
 <body>
     <div class="container">
         <h1>Privacy Policy for TerminalPro</h1>
-        <p class="last-updated">Last Updated: January 2025</p>
+        <p class="last-updated">Last Updated: November 19, 2026</p>
 
         <p>This Privacy Policy describes how TerminalPro ("we", "our", or "the app") collects, uses, and protects your information when you use our mobile application.</p>
 
@@ -81,8 +81,10 @@
         <h3>1.1 Information You Provide</h3>
         <ul>
             <li><strong>SSH Connection Details:</strong> Host addresses, ports, usernames, and connection names that you configure</li>
-            <li><strong>Authentication Credentials:</strong> Passwords and SSH keys (if you choose to save them locally)</li>
+            <li><strong>Authentication Credentials:</strong> Passwords, private keys and key passphrases (only if you choose to save them on your device)</li>
             <li><strong>Command History:</strong> Terminal commands and favorite commands you save</li>
+            <li><strong>Trusted Server Fingerprints:</strong> The host key fingerprints of servers you choose to trust, used to detect changed or impersonated servers</li>
+            <li><strong>Files You Transfer:</strong> Files you upload or download with the built-in SFTP browser move directly between your device and your server; we never receive them</li>
             <li><strong>App Preferences:</strong> Settings and customizations you configure within the app</li>
         </ul>
 
@@ -111,8 +113,9 @@
 
         <h3>3.1 Local Storage</h3>
         <ul>
-            <li>All SSH credentials are stored locally on your device using Android's secure storage mechanisms</li>
-            <li>Passwords are stored in encrypted format using Android's SharedPreferences with encryption</li>
+            <li>Passwords, private keys and passphrases are stored in the operating system's hardware-backed secure storage (Android Keystore with encrypted storage, or the iOS Keychain), separately from ordinary app settings</li>
+            <li>Credentials are excluded from Android cloud backups and device-transfer backups, so they are not copied to Google servers</li>
+            <li>Other connection details (names, hosts, ports, usernames) and preferences are stored locally in the app's private storage</li>
             <li>Connection data remains on your device and is never transmitted to our servers</li>
         </ul>
 
@@ -121,6 +124,7 @@
             <li>We use industry-standard encryption for storing sensitive data</li>
             <li>SSH connections are made directly from your device to your servers</li>
             <li>We do not act as an intermediary or proxy for your SSH connections</li>
+            <li>The app verifies server host keys: it asks you to confirm a new server fingerprint the first time you connect and warns you if it later changes</li>
         </ul>
 
         <h2>4. Third-Party Services</h2>
@@ -155,13 +159,14 @@
         <ul>
             <li><strong>Access:</strong> You can view all your saved connections and data within the app settings</li>
             <li><strong>Deletion:</strong> You can delete individual connections or clear all data from the app settings</li>
-            <li><strong>Export:</strong> Connection data can be backed up locally on your device</li>
+            <li><strong>Trusted servers:</strong> You can review and remove saved server fingerprints in Settings</li>
         </ul>
 
-        <h3>6.2 Ad-Free Option</h3>
+        <h3>6.2 Ad-Free Options</h3>
         <p>You can purchase the ad-free version to:</p>
         <ul>
             <li>Remove all advertisements</li>
+            <li>Or, watch an optional rewarded video ad to hide banner ads for 24 hours (the app stores only the expiry time on your device)</li>
             <li>Eliminate Google Ads data collection</li>
             <li>Support continued development of the app</li>
         </ul>
@@ -203,7 +208,7 @@
 
         <h2>Summary of Key Points</h2>
         <ul>
-            <li>✓ Your SSH credentials and connection data are stored ONLY on your device</li>
+            <li>✓ Your SSH credentials and connection data are stored ONLY on your device, with passwords and keys in the OS secure storage</li>
             <li>✓ We do not have access to your passwords, SSH keys, or connection details</li>
             <li>✓ SSH connections are made directly from your device to your servers</li>
             <li>✓ Google Ads may collect advertising data in the free version</li>
